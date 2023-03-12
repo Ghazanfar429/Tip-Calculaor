@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="quriess.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <section>
+      <h1>spli<br />tter</h1>
+      <form>
+        <div class="selection">
+          <label for="amount">Bill</label><br />
+          <p class="value_box">
+            <img src="images/icon-dollar.svg" alt="#" /><input
+              type="text"
+              id="amount"
+              placeholder="0"
+              size="18"
+              required
+            />
+          </p>
+          <div class="ctn">
+            <p>Select Tip %</p>
+            <div class="btn_cnt">
+              <input class="tip10" type="button" value="10%" />
+              <input class="tip15" type="button" value="15%" />
+              <input class="tip20" type="button" value="20%" />
+            </div>
+            <div class="btn_cnt">
+              <input class="tip25" type="button" value="25%" />
+              <input class="tip30" type="button" value="30%" />
+              <input class="custom" type="text" placeholder="Custom" size="7" />
+            </div>
+          </div>
+          <div class="people">
+            <label for="amount">Number of People</label><br />
+            <p class="value_box">
+              <img src="images/icon-person.svg" alt="" /><input
+                type="text"
+                id="quantity"
+                placeholder="0"
+                size="18"
+                required
+              />
+            </p>
+          </div>
+        </div>
+        <div class="result">
+          <div class="output">
+            <div class="output_details">
+              <p>Tip Amount</p>
+              <p class="only">/ Peron</p>
+            </div>
+            <p id="one" class="total">$0.00</p>
+          </div>
+          <div class="output">
+            <div class="output_details">
+              <p>Total</p>
+              <p class="only">/ Person</p>
+            </div>
+            <p id="two" class="total">$0.00</p>
+          </div>
+          <input type="reset" class="reset" value="reset" />
+        </div>
+      </form>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
